@@ -5,6 +5,10 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+body {
+  background: #eee;
+}
+
 .container {
   width: 100vw;
   height: 100vh;
@@ -13,14 +17,23 @@
 .navbar-cont {
   display: flex;
   justify-content: space-between;
-  width: 800px;
-  height: 100px;
+  width: 1000px;
+  height: 80px;
   margin: auto;
   margin-top: 50px;
 }
 
-.navbar-img {
+#navbar-img {
   height: 100%;
+
+  padding: 10px 0;
+}
+
+.navbar-left {
+  height: 100%;
+  width: 20%;
+  padding: 10px;
+  display: flex;
 }
 
 .navbar-right {
@@ -31,36 +44,39 @@
 
 .navbar-item {
   text-align: right;
-  padding: 25px 0;
+  line-height: 80px;
 }
 
 
 .navbar-item-i {
-  position: relative;
   display: inline-block;
+  position: relative;
 }
 
 .navbar-item-ii {
-  position: absolute;
-  display: block;
   display: none;
+  position: absolute;
+  width: 100%;
 }
 
 
 .navbar-item-i > a {
   padding: 0 20px;
-  display: block;
 }
 
 .navbar-item-ii > a {
-  padding: 0 20px;
+  margin-top: 5px;
   display: block;
+  text-align: right;
+  padding: 0 20px;
 }
 
 .navbar-item-i:hover {
   background: lightgrey;
+  border-radius: 5px;
 }
 
-.navbar-item-ii:hover {
+.navbar-item-ii > a:hover {
   background: lightgrey;
+  border-radius: 5px;
 }
